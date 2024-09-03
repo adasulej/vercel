@@ -10,6 +10,7 @@ const { Document, Packer, Paragraph, TextRun } = require('docx'); // Import docx
 
 const app = express();
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));  // Correctly set the path to the views directory
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json()); // Add this line to parse JSON bodies
 app.use(express.static('public'));
