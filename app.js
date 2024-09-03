@@ -7,6 +7,7 @@ const TORObject = require('./torObject'); // Import the TORObject class
 require('dotenv').config();
 const PDFDocument = require('pdfkit');
 const { Document, Packer, Paragraph, TextRun } = require('docx'); // Import docx librar
+const path = require('path');
 
 const app = express();
 app.set('view engine', 'ejs');
